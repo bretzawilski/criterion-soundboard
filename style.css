@@ -1,0 +1,75 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: blue;
+    color: red;
+  }
+  .container > p {
+    font-size: 0.9rem;
+  }
+}
+
+body {
+  /* margin: 0; */
+  background-image: url(/img/backgroung-overlay.jpeg);
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
+.keys {
+  margin: auto;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.key {
+  border: 5px solid black;
+  padding: 0 1rem 1rem 1rem;
+  justify-content: center;
+  transition: transform, 0.1s;
+  text-align: center;
+  width: 9rem;
+  background-color: rgba(0, 0, 0, 0.605);
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.key > P {
+  font-size: 2rem;
+  font-family: "Righteous", sans-serif;
+}
+
+.playing {
+  transform: scale(1.1);
+  transform: 0.1s;
+  border-color: yellow;
+  color: orange;
+  /* font-size: 1.1rem; */
+}
+
+.playing > p {
+  /* font-size: 2.1rem; */
+}
+
+.container > p {
+  text-align: center;
+  font-family: "Righteous", serif;
+  padding-bottom: 3rem;
+  font-size: 2rem;
+  color: yellow;
+}
