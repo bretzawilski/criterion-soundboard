@@ -8,6 +8,14 @@ html {
   box-sizing: inherit;
 }
 
+small {
+  color: white;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Righteous", sans-serif;
+}
+
 @media screen and (max-width: 600px) {
   body {
     background-color: blue;
